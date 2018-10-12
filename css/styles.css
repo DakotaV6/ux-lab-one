@@ -9,3 +9,120 @@ font-family: 'Playfair Display', serif;
 /***********************************/
 /**           GENERAL             **/
 /***********************************/
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Playfair Display', serif;
+}
+.cursive {
+    font-family: 'Homemade Apple', cursive;
+}
+a {
+    text-decoration: none;
+    color: rgba(130, 160, 188, 1);
+}
+a:hover {
+    background-color: ;
+    padding: ;
+}
+p {
+    font-size: .8em;
+    padding-top: 2px;
+}
+/***********************************/
+/**           HEADER              **/
+/***********************************/
+header {
+    padding: 3%;
+    background-color: rgba(48, 77, 109, 1);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo {
+    font-size: 1.5em;
+    text-align: center;
+    color: rgba(130, 160, 188, 1);
+}
+/***********************************/
+/**            MAIN               **/
+/***********************************/
+.main-container {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.h1 {
+    color: rgba(130, 160, 188, 1);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4em;
+}
+img {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.photo-cred {
+    font-size: .5em;
+}
+.scientific {
+    font-size: .7em;
+    font-style: italic;
+}
+.otter {
+    display: inline-block;
+    background-color:rgba(167, 204, 237, 1);
+    padding: 5px 5px 0px 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 10px;
+}
+.card {
+    background-color:rgba(167, 204, 237, 1);
+    padding: 10px;
+    padding-top: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5%;
+        font-size: 1.25em;
+    }
+    nav {
+        width: 35%;
+    }
+    .h1 {
+        font-size: 2em;
+    }
+    .main-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .column {
+        flex: 1;
+        padding: 20px;
+    }
+    .img-row {
+        height: 400px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .img-row {
+        height: 600px;
+    }
+}
